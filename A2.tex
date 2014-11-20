@@ -1,0 +1,40 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\date{\today}
+\author{Yannick Vogel}
+\title{CS102 \LaTeX Übung}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Einleitung}
+Niemals würde ein Mensch so weit sehen, wenn er nicht auf den Schultern eines Riesen stehen würde. Niemals könnte ein solches Meisterwerk entstehen, ohne die Hilfe von \LaTeX .
+\section{Die Tabelle}
+Die Meilensteine des Erfolges meiner selbst (dieser Text wird immer schlimmer \dots ) sind in Tabelle \ref{tab:DieTabelle} aufgeführt.  
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c}
+{} & Punkte Total & Punkte erreicht & \% \\
+\hline
+Übung 1 & 10 & 9 & 90\% \\
+Übung 2 & 10 & 9.5 & 95\% \\
+Übung 3 & 10 & 10 & 100\% \\
+Übung 4 & 10 & 9 & 90\% \\
+\end{tabular}
+\caption{Die Tabelle}
+\label{tab:DieTabelle}
+\end{table}
+\section{Die zugehörigen Formeln}
+\subsection{Pythagoras}
+Der Satz des Pythagoras errechnet sich wie folgt: $a^2 + b^2 = c^2$. Daraus können
+wir die Länge der Hypothenuse wie folgt berechnen: $c = \sqrt{a^2 + b^2}$
+\subsection{Summen}
+Wir können auch die Formel für eine Summe angeben (siehe \ref{Summenformel}):
+
+\begin{equation}
+\label{Summenformel}
+s = \sum_{i=1}^{n}i= \frac{n\times(n+1)}{2}
+\end{equation}
+\end{document}
+
